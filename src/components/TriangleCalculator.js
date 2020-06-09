@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import CalculateButton from "../images/calculatePointer.png";
 import ClearButton from "../images/clear.jpg";
 import { solve } from "./solveInputs.js";
-import TestButtons from "./testbuttons"; // Remove
 import Sidebar from "./SideBar";
 
 class Calculator extends Component {
@@ -30,58 +29,8 @@ class Calculator extends Component {
     this.handleClear = this.handleClear.bind(this);
     this.setInputFields = this.setInputFields.bind(this);
     this.setMode = this.setMode.bind(this);
-
-    this.testButtonSetState = this.testButtonSetState.bind(this); //REMOVE
   }
-  //REMOVE
-  testButtonSetState(angleA, angleB, angleC, sideA, sideB, sideC, radianMode) {
-    let tempCalc = {
-      angleA: angleA,
-      angleB: angleB,
-      angleC: angleC,
-      sideA: sideA,
-      sideB: sideB,
-      sideC: sideC,
-    };
 
-    this.props.storeCalculation(tempCalc);
-    let result;
-    try {
-      result = solve(angleA, angleB, angleC, sideA, sideB, sideC, radianMode);
-      this.props.errorMessageBox(`Method Used: ${result[0][6]}`);
-      if (!result[1]) {
-        this.setState({
-          displayObtuse: false,
-          sideA: result[0][0],
-          sideB: result[0][1],
-          sideC: result[0][2],
-          angleA: result[0][3],
-          angleB: result[0][4],
-          angleC: result[0][5],
-        });
-      } else {
-        this.setState({
-          displayObtuse: true,
-          sideA: result[0][0],
-          sideB: result[0][1],
-          sideC: result[0][2],
-          angleA: result[0][3],
-          angleB: result[0][4],
-          angleC: result[0][5],
-          ObtuseSideA: result[1][0],
-          ObtuseSideB: result[1][1],
-          ObtuseSideC: result[1][2],
-          ObtuseAngleA: result[1][3],
-          ObtuseAngleB: result[1][4],
-          ObtuseAngleC: result[1][5],
-        });
-      }
-    } catch (err) {
-      //catch error and set error message
-      this.props.errorMessageBox(err.message);
-      console.log(err);
-    }
-  }
   setMode(e) {
     let bool = false;
     if (e.target.value === "true") {
@@ -190,6 +139,7 @@ class Calculator extends Component {
           <form noValidate>
             <div className=" input-divide ">
               <input
+                autocomplete="off"
                 style={{ position: "relative", top: "5%", left: "242px" }}
                 type="text"
                 className="triangle-input"
@@ -204,6 +154,7 @@ class Calculator extends Component {
               style={{ width: "400px", margin: "0 auto" }}
             >
               <input
+                autocomplete="off"
                 style={{ marginLeft: "15px", position: "relative", top: "50%" }}
                 type="text"
                 className="triangle-input"
@@ -213,6 +164,7 @@ class Calculator extends Component {
                 onChange={this.handleChange}
               />
               <input
+                autocomplete="off"
                 style={{
                   float: "right",
                   marginRight: "15px",
@@ -229,6 +181,7 @@ class Calculator extends Component {
             </div>
             <div className="input-divide">
               <input
+                autocomplete="off"
                 style={{ position: "relative", top: "60%" }}
                 type="text"
                 className="triangle-input"
@@ -238,6 +191,7 @@ class Calculator extends Component {
                 onChange={this.handleChange}
               />
               <input
+                autocomplete="off"
                 style={{ position: "relative", top: "75%", left: " 171px" }}
                 type="text"
                 className="triangle-input"
@@ -247,6 +201,7 @@ class Calculator extends Component {
                 onChange={this.handleChange}
               />
               <input
+                autocomplete="off"
                 style={{ position: " relative", top: "60%", float: "right" }}
                 type="text"
                 className="triangle-input"
@@ -283,10 +238,12 @@ class Calculator extends Component {
               </label>
             </div>
           </form>
-          {/* TODO: TEST BUTTON */}
-          <TestButtons testButtonSetState={this.testButtonSetState} />
-          {/* prettier-ignore */}
-          <div className={"obtuse-case " + (this.state.displayObtuse ? "" : "hidden")}>
+          <br />
+          <div
+            className={
+              "obtuse-case " + (this.state.displayObtuse ? "" : "hidden")
+            }
+          >
             <div className="error-messagebox">Second Possibility</div>
             <form noValidate>
               <div className=" input-divide ">
