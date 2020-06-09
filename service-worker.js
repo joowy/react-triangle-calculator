@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-triangle-calculator/precache-manifest.7ef42da49c36c305c5e6fba6ba227a26.js"
+  "/react-triangle-calculator/precache-manifest.c954ec2c6c952122cb41d1cf056313a3.js"
 );
 
 self.addEventListener('message', (event) => {
