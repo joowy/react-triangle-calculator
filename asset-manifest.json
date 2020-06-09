@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-triangle-calculator/static/css/main.12f06b67.chunk.css",
+    "main.js": "/react-triangle-calculator/static/js/main.ea83f97b.chunk.js",
+    "main.js.map": "/react-triangle-calculator/static/js/main.ea83f97b.chunk.js.map",
+    "runtime-main.js": "/react-triangle-calculator/static/js/runtime-main.bd1de83b.js",
+    "runtime-main.js.map": "/react-triangle-calculator/static/js/runtime-main.bd1de83b.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/react-triangle-calculator/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.e66739b5.chunk.js": "/react-triangle-calculator/static/js/2.e66739b5.chunk.js",
+    "static/js/2.e66739b5.chunk.js.map": "/react-triangle-calculator/static/js/2.e66739b5.chunk.js.map",
+    "index.html": "/react-triangle-calculator/index.html",
+    "precache-manifest.7ef42da49c36c305c5e6fba6ba227a26.js": "/react-triangle-calculator/precache-manifest.7ef42da49c36c305c5e6fba6ba227a26.js",
+    "service-worker.js": "/react-triangle-calculator/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/react-triangle-calculator/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.12f06b67.chunk.css.map": "/react-triangle-calculator/static/css/main.12f06b67.chunk.css.map",
+    "static/js/2.e66739b5.chunk.js.LICENSE.txt": "/react-triangle-calculator/static/js/2.e66739b5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd1de83b.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.e66739b5.chunk.js",
+    "static/css/main.12f06b67.chunk.css",
+    "static/js/main.ea83f97b.chunk.js"
+  ]
+}
