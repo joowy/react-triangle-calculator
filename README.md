@@ -1,6 +1,6 @@
 # React Triangle Calculator
 
-This is a triangle calculator built with react
+Triangle calculator built with react
 
 ## Installation
 
@@ -11,6 +11,8 @@ View this project at https://777mlhg.github.io/react-triangle-calculator/
 - `npm start` to start the local server (this project uses create-react-app)
 
 ## Usage
+
+demo: ![Alt Text](https://github.com/777mlHg/react-triangle-calculator/blob/master/src/images/demo.gif)
 
 ## License
 
