@@ -1,0 +1,125 @@
+
+
+.app-container {
+  margin: 1px auto;
+  padding: 1px;
+  border: 1px;
+  width: 700px;
+  height: 1200px; /* Change to the height you need */
+  display: flex;
+}
+.top-messagebox {
+  text-align: center;
+}
+.error-messagebox {
+  padding-left: 20px;
+  text-align: center;
+  color: red;
+}
+.triangle-app {
+  margin: 1px auto;
+  padding: 1px;
+  border: 5px;
+  width: 560px;
+  height: 580px;
+  display: flex;
+}
+.trianglePic {
+  background-image: url("../images/tri.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 18%;
+  border: black 3px solid;
+  padding: 1px;
+  width: 560px;
+
+  height: 600px;
+}
+.input-divide {
+  height: 160px;
+  width: 540px;
+}
+.triangle-input {
+  width: 61px;
+  height: 25px;
+}
+.triangle-input::placeholder {
+  font-size: smaller;
+}
+
+.calculate-clear-div {
+  text-align: center;
+  display: block;
+  border-top: 2px solid black;
+}
+.calculate-clear-button {
+  display: inline-block;
+  width: 6em;
+  margin-right: 0.5em;
+  padding-top: 0.5em;
+}
+
+.obtuse-case {
+  background-image: url("../images/tri.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  border: black 3px solid;
+  height: 500px;
+  width: 550px;
+}
+
+.hidden {
+  display: none;
+}
+/* History Sidebar */
+.sidebar {
+  width: 900px;
+  height: 150px;
+  float: right;
+  color: gray;
+  min-height: 600px;
+  padding-left: 1px;
+  padding-top: 2px;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 250px;
+  text-align: left;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+.active,
+.accordion,
+.calc-instance:hover {
+  background-color: #ccc;
+}
+
+.history-panel {
+  padding: 0 2px;
+  background-color: white;
+  color: black;
+  overflow-y: auto;
+  max-height: 480px;
+}
+
+.setting-panel {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.calc-instance {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+  width: 250px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.calculation-mode {
+  color: black;
+}
