@@ -77,7 +77,7 @@ class Calculator extends Component {
         tempCalc["sideC"],
         tempCalc["calculationMode"]
       );
-      this.props.errorMessageBox(result[0][6]);
+      this.props.errorMessageBox(`Method Used: ${result[0][6]}`);
       if (!result[1]) {
         this.setState({
           displayObtuse: false,
@@ -139,7 +139,7 @@ class Calculator extends Component {
           <form noValidate>
             <div className=" input-divide ">
               <input
-                autocomplete="off"
+                autoComplete="off"
                 style={{ position: "relative", top: "5%", left: "242px" }}
                 type="text"
                 className="triangle-input"
@@ -154,7 +154,7 @@ class Calculator extends Component {
               style={{ width: "400px", margin: "0 auto" }}
             >
               <input
-                autocomplete="off"
+                autoComplete="off"
                 style={{ marginLeft: "15px", position: "relative", top: "50%" }}
                 type="text"
                 className="triangle-input"
@@ -164,7 +164,7 @@ class Calculator extends Component {
                 onChange={this.handleChange}
               />
               <input
-                autocomplete="off"
+                autoComplete="off"
                 style={{
                   float: "right",
                   marginRight: "15px",
@@ -181,7 +181,7 @@ class Calculator extends Component {
             </div>
             <div className="input-divide">
               <input
-                autocomplete="off"
+                autoComplete="off"
                 style={{ position: "relative", top: "60%" }}
                 type="text"
                 className="triangle-input"
@@ -191,7 +191,7 @@ class Calculator extends Component {
                 onChange={this.handleChange}
               />
               <input
-                autocomplete="off"
+                autoComplete="off"
                 style={{ position: "relative", top: "75%", left: " 171px" }}
                 type="text"
                 className="triangle-input"
@@ -201,7 +201,7 @@ class Calculator extends Component {
                 onChange={this.handleChange}
               />
               <input
-                autocomplete="off"
+                autoComplete="off"
                 style={{ position: " relative", top: "60%", float: "right" }}
                 type="text"
                 className="triangle-input"

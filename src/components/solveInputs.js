@@ -12,13 +12,15 @@ function toDegree(rad) {
   }
 }
 function roundAns(a) {
-  for (let i = 0; i < a.length; i++) {
-    const e = a[i];
-    if (!isNaN(e)) {
-      a[i] = +Number(e).toFixed(3);
+  if (a) {
+    for (let i = 0; i < a.length; i++) {
+      const e = a[i];
+      if (!isNaN(e)) {
+        a[i] = +Number(e).toFixed(3);
+      }
     }
+    return a;
   }
-  return a;
 }
 
 //AAAS works
@@ -246,7 +248,7 @@ function solve(angleA, angleB, angleC, sideA, sideB, sideC, radianMode) {
       }
     }
     out = roundAns(out);
-    outObtuse = roundAns(out);
+    outObtuse = roundAns(outObtuse);
     return [out, outObtuse];
   }
   // one side and two angles
