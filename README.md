@@ -4,7 +4,7 @@ Triangle calculator built with react
 
 ## Installation
 
-View this project at https://777mlhg.github.io/react-triangle-calculator/
+View this project at https://joowy.github.io/react-triangle-calculator/
 
 - Clone this repo
 - `npm install` to install all dependencies
